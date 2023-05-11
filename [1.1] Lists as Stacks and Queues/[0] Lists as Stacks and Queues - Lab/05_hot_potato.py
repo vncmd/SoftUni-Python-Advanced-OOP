@@ -8,4 +8,4 @@ while len(data_names) > 1:
     name_to_leave = data_names.popleft()
     print(f"Removed {name_to_leave}")
 
-print(f"Last is{data_names.popleft()}")
+print(f"Last is {data_names.popleft()}")

@@ -15,4 +15,4 @@ while True:
 
     customers.append(data)
 
-print(f"{len(customers)} people remaining")
+print(f"{len(customers)} people remaining.")
