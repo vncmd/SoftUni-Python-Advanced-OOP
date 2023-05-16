@@ -13,7 +13,7 @@ presents = {
 
 while materials and magic_level:
     material = materials.pop() if magic_level[0] or not materials[0] else 0
-    magic = materials.popleft() if material or not magic_level else 0
+    magic = magic_level.popleft() if material or not magic_level else 0
 
     if not magic:
         continue
