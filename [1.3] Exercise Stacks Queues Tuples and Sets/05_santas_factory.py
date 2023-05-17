@@ -13,7 +13,7 @@ presents = {
 
 while materials and magic_level:
     material = materials.pop() if magic_level[0] or not materials[0] else 0
-    magic = magic_level.popleft() if material or not magic_level else 0
+    magic = magic_level.popleft() if material or not magic_level[0] else 0
 
     if not magic:
         continue
@@ -39,6 +39,6 @@ if materials:
     print(f"Materials left: {', '.join([str(x) for x in materials][::-1])}")
 
 if magic_level:
-    print(f"Materials left: {', '.join([str(x) for x in magic_level])}")
+    print(f"Magic left: {', '.join([str(x) for x in magic_level])}")
 
 [print(f"{toy}: {crafted.count(toy)}")for toy in sorted(set(crafted))]
