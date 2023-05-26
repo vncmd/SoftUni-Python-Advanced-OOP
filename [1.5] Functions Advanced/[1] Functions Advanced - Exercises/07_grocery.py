@@ -6,3 +6,11 @@ def grocery_store(**products):
         result.append(f"{product}: {quantity}")
 
     return '\n'.join(result)
+
+
+print(grocery_store(
+    bread=2,
+    pasta=2,
+    eggs=20,
+    carrot=1,
+))
