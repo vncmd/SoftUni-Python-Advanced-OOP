@@ -1,7 +1,7 @@
 import os
 
 while True:
-    command, *info = input().split("-")  # Replace-example.txt-_-=
+    command, *info = input().split("-")
 
     if command == "Create":
         with open(f"files/{info[0]}", "w"):
