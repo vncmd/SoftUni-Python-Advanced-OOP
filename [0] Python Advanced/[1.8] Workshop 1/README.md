@@ -1,0 +1,1 @@
+Workshops in the Advanced module at SoftUni, are basic games made to work with inputted data from the console. In the first Workshop project called Connect Four, the objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own tokens.
