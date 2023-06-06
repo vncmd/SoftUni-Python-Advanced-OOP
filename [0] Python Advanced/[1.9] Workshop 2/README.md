@@ -1,0 +1,1 @@
+Workshops in the Advanced module at SoftUni, are basic games made to work with inputted data from the console. In the second Workshop project it's the famous Tic-Tac-Toe game, Tic Tac Toe is a two-player game in which the objective is to take turns and mark the correct spaces in a 3x3 (or larger) grid, but in this game we use the classic 3x3 grade.
