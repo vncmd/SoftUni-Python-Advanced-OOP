@@ -1,0 +1,1 @@
+In this exercise the task was to build a mini GUI-Shop app, with authentication and password encryption. You can check out more about the course at: https://softuni.bg/trainings/4106/python-advanced-may-2023 NOTE: The website is in bulgarian, they also do courses in english you can check it at: https://softuni.org/
