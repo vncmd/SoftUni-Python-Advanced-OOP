@@ -7,5 +7,6 @@ file_path = os.path.join(absolute_path, 'files', 'text.txt')
 try:
     file_obj = open(file_path)
     print('File found')
+
 except FileNotFoundError:
     print('File not found')
