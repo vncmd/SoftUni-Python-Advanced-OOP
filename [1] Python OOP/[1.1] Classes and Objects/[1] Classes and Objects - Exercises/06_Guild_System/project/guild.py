@@ -1,4 +1,3 @@
-
 from project.player import Player
 
 
@@ -19,7 +18,7 @@ class Guild:
 
         return f"Welcome player {player.name} to the guild {self.name}"
 
-    def kick_player(self, player_name: str) -> str:
+    def kick_player(self, player_name: str):
         try:
             player = next(filter(lambda x: x.name == player_name, self.players))
 
