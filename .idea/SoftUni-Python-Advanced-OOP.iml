@@ -3,7 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.1] Classes and Objects/[1] Classes and Objects - Exercises/08_Library" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.2] Inheritance/[1] Inheritance - Exercise/03_Platers_and_Monsters" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.2] Inheritance/[1] Inheritance - Exercise/04_Need_for_Speed" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.1] Classes and Objects/[1] Classes and Objects - Exercises/05 To Do List" />
       <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[0] First Steps in OOP/[1] First Steps in OOP - Exercises/08 Pokemon Battle" />
       <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.1] Classes and Objects/[1] Classes and Objects - Exercises/06_Guild_System" />
@@ -15,6 +15,7 @@
       <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.2] Inheritance/[0] Inheritance - Lab/05_Hierarchical_Inheritance" />
       <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.2] Inheritance/[1] Inheritance - Exercise/01_Person" />
       <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.2] Inheritance/[1] Inheritance - Exercise/02_Zoo" />
+      <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.2] Inheritance/[1] Inheritance - Exercise/03_Platers_and_Monsters" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
