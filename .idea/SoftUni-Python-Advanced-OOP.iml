@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.1] Classes and Objects/[1] Classes and Objects - Exercises/08_Library" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.5] Polymorphism and Abstraction/[1] Polymorphism and Abstraction - Exercise/04_Wild_Farm" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.1] Classes and Objects/[1] Classes and Objects - Exercises/05 To Do List" />
       <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[0] First Steps in OOP/[1] First Steps in OOP - Exercises/08 Pokemon Battle" />
       <excludeFolder url="file://$MODULE_DIR$/[1] Python OOP/[1.1] Classes and Objects/[1] Classes and Objects - Exercises/06_Guild_System" />
