@@ -5,23 +5,28 @@ from project.pokemon import Pokemon
 class Trainer:
     def __init__(self, name: str):
         self.name = name
-        self.pokemons: List[Pokemon] = []
+        self.pokemons: List[Pokemon] = []  # [Pokemon("pickachu", 100), Pokemon(..., ...)]
 
-    def add_pokemon(self, pokemon_: Pokemon) -> str:
-        if pokemon_ in self.pokemons:
-            return "This pokemon_ is already caught"
+    def add_pokemon(self, pokemon: Pokemon) -> str:
+        if pokemon in self.pokemons:
+            return "This pokemon is already caught"
 
-        self.pokemons.append(pokemon_)
+        self.pokemons.append(pokemon)
 
-        return f"Caught {pokemon_.pokemon_details()}"
+        return f"Caught {pokemon.pokemon_details()}"
 
     def release_pokemon(self, pokemon_name: str) -> str:
         try:
-            pokemon_ = next(filter(lambda p: p.name == pokemon_name, self.pokemons))
+            pokemon = next(filter(lambda p: p.name == pokemon_name, self.pokemons))
         except StopIteration:
             return "Pokemon is not caught"
 
-        self.pokemons.remove(pokemon_)
+        # try:
+        #     pokemon = [p for p in self.pokemons if p.name == pokemon_name][0]
+        # except IndexError:
+        #     return "Pokemon is not caught"
+
+        self.pokemons.remove(pokemon)
 
         return f"You have released {pokemon_name}"
 
@@ -31,8 +36,6 @@ class Trainer:
         return f"Pokemon Trainer {self.name}\n" + \
                f"Pokemon count {len(self.pokemons)}\n" + \
                f"{pokemons_data}"
-
-# Tests:
 
 
 pokemon = Pokemon("Pikachu", 90)
