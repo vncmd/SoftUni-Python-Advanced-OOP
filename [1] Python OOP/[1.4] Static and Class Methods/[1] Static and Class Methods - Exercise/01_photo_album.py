@@ -8,7 +8,9 @@ class PhotoAlbum:
         self.current_idx = 0
 
     def __initialize_photos(self):
-        matrix = [[[] for _ in range(self.pages)]]
+        matrix = []
+        for _ in range(self.pages):
+            matrix.append([])
 
         return matrix
 
