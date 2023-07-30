@@ -8,6 +8,5 @@ class Vehicle:
 
     def drive(self, kilometers):
         needed_fuel = kilometers * self.fuel_consumption
-
         if self.fuel >= needed_fuel:
             self.fuel -= needed_fuel
