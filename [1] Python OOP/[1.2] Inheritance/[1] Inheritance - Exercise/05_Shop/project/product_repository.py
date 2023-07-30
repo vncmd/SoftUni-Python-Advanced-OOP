@@ -8,15 +8,19 @@ class ProductRepository:
     def add(self, product: Product):
         self.products.append(product)
 
-    def find(self, name: str):
-        res = [p for p in self.products if p.name == name][0]
-        if res:
-            return res[0]
+    def find(self, product_name: str):
+        try:
+            match = next(filter(lambda x: x.name == product_name, self.products))
+            return match
+        except StopIteration:
+            pass
 
-    def remove(self, name: str):
-        product = self.find(name)
-        if product:
-            self.products.remove(product)
+    def remove(self, product_name: str):
+        try:
+            match = next(filter(lambda x: x.name == product_name, self.products))
+            self.products.remove(match)
+        except StopIteration:
+            pass
 
     def __repr__(self):
-        return '\n'.join([f"{x.name}: {x.quantity}" for x in self.products])
+        return '\n'.join(f"{x.name}: {x.quantity}" for x in self.products)
