@@ -96,7 +96,7 @@ class MovieApp:
         if movie.title not in [x.title for x in user.movies_liked]:
             raise Exception(f"{username} has not liked the movie {movie.title}!")
 
-        movie.likes = 1
+        movie.likes -= 1
         user.movies_liked.remove(movie)
 
         return f"{username} disliked {movie.title} movie."
