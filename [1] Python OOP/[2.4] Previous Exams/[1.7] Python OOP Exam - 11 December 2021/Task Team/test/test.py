@@ -3,13 +3,13 @@ from unittest import TestCase, main
 
 
 class Tests(TestCase):
-    def test_01_init(self):
+    def test_init(self):
         team = Team("Bulls")
 
         self.assertEqual("Bulls", team.name)
         self.assertEqual({}, team.members)
 
-    def test_02_incorrect_name_raises(self):
+    def test_incorrect_name_raises(self):
         with self.assertRaises(ValueError) as ex:
             team = Team("Bulls2")
 
@@ -21,7 +21,7 @@ class Tests(TestCase):
 
         self.assertEqual("Team Name can contain only letters!", str(ex.exception))
 
-    def test_03_add_member_adds_correctly(self):
+    def test_add_member_adds_correctly(self):
         team = Team("Bulls")
 
         result = team.add_member()
@@ -40,7 +40,7 @@ class Tests(TestCase):
         self.assertEqual({"John": 20, "Mark": 19, "Tom": 22}, team.members)
         self.assertEqual(expected_result, result)
 
-    def test_04_remove_valid_member(self):
+    def test_remove_valid_member(self):
         team = Team("Bulls")
         team.add_member(John=20, Mark=19, Tom=22)
 
@@ -48,7 +48,7 @@ class Tests(TestCase):
         self.assertEqual("Member Tom removed", result)
         self.assertEqual({"John": 20, "Mark": 19}, team.members)
 
-    def test_05_remove_invalid_member(self):
+    def test_remove_invalid_member(self):
         team = Team("Bulls")
         team.add_member(John=20, Mark=19, Tom=22)
 
@@ -56,7 +56,7 @@ class Tests(TestCase):
         self.assertEqual("Member with name Sam does not exist", result)
         self.assertEqual({"John": 20, "Mark": 19, "Tom": 22}, team.members)
 
-    def test_06_greater_than_returns_true(self):
+    def test_greater_than_returns_true(self):
         team = Team("Bulls")
         team.add_member(John=20, Mark=19, Tom=22)
 
@@ -69,7 +69,7 @@ class Tests(TestCase):
         self.assertTrue(team > other_team)
         self.assertFalse(team < other_team)
 
-    def test_07_greater_than_returns_false(self):
+    def test_greater_than_returns_false(self):
         team = Team("Bulls")
         team.add_member(John=20)
 
@@ -89,14 +89,14 @@ class Tests(TestCase):
         self.assertFalse(team > other_team)
         self.assertFalse(other_team > team)
 
-    def test_08_len(self):
+    def test_len(self):
         team = Team("Bulls")
         team.add_member(John=20, Mark=19, Tom=22)
 
         result = len(team)
         self.assertEqual(3, result)
 
-    def test_09_add(self):
+    def test_add(self):
         team = Team("Bulls")
         team.add_member(John=20, Mark=19, Tom=22)
 
@@ -108,7 +108,7 @@ class Tests(TestCase):
         self.assertEqual("BullsHawks", merged_team.name)
         self.assertEqual({"John": 20, "Mark": 19, "Tom": 22, "Sam": 20}, merged_team.members)
 
-    def test_10_str(self):
+    def test_str(self):
         team = Team("Bulls")
         team.add_member(John=20, Mark=19, Tom=22)
 
